@@ -25,6 +25,11 @@ function atualizarLista() {
         item.textContent = amigos[i];
         lista.appendChild(item);
     }
+
+    let limparResultado = document.getElementById('resultado');
+    if(limparResultado != ''){
+        limparResultado.innerHTML = '';
+    }
 }
 
 function sortearAmigo() {
@@ -37,8 +42,8 @@ function sortearAmigo() {
     let resultado = document.getElementById('resultado');
     resultado.innerHTML = `O amigo sorteado foi: ${sorteado}`;
 
-    let limparLista = document.getElementById('listaAmigos');
-    limparLista.innerHTML = '';
+    //let limparLista = document.getElementById('listaAmigos');
+    //limparLista.innerHTML = '';
 
 
 }
